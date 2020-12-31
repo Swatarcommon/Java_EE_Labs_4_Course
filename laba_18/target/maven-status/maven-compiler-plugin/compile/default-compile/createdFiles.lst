@@ -1,0 +1,8 @@
+entity\User.class
+dao\CommentDao.class
+entity\Reference.class
+entity\Comment.class
+servlet\Comments.class
+dao\RefDao.class
+servlet\References.class
+servlet\Users.class

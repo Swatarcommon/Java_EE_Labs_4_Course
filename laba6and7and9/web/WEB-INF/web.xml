@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <context-param>
+        <param-name>url1</param-name>
+        <param-value>http://localhost:8081/laba6and7and9/GoUrln</param-value>
+    </context-param>
+    <context-param>
+        <param-name>url2</param-name>
+        <param-value>http://localhost:8081/laba6and7and9/urln.jsp</param-value>
+    </context-param>
+    <context-param>
+        <param-name>urln</param-name>
+        <param-value>urln.jsp</param-value>
+    </context-param>
+
+
+</web-app>

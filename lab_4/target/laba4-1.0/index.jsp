@@ -21,14 +21,13 @@
     else if (hours > 6 && hours < 12) {
       out.println("Good morning");
       logger.info("Good morning");
-      //name = "morning.jsp";
-      name = "/afternoon";
+      name = "morning.jsp";
+      //name = "/afternoon";
     }
     else if (hours > 12 && hours < 18) {
       out.println("Good afternoon");
       logger.info("Good afternoon");
-      name = "afternoon.jsp";
-      //name = "/afternoon";
+      //name = "afternoon.jsp";
     }
     else if (hours > 18 && hours < 24) {
       out.println("Good  evening");
@@ -50,21 +49,22 @@
   %>
   <br/>
 
-<%--  <a href="<%= name%>"><input type="button" value="press"/></a>--%>
-<%--  <%--%>
-<%--    if(request.getParameter("submit1") != null) {--%>
-<%--      switch(name){--%>
-<%--        case "night.jsp":%><%@include file="night.jsp"%><%--%>
-<%--        break;--%>
-<%--      case "morning.jsp":%><%@include file="morning.jsp"%><%--%>
-<%--        break;--%>
-<%--      case "evening.jsp": %><%@include file="evening.jsp"%><%--%>
-<%--        break;--%>
-<%--      default :%><%@include file="afternoon.jsp"%><%--%>
-<%--        break;--%>
-<%--      }--%>
-<%--    }--%>
-<%--  %>--%>
+  <%--<a href="<%= name%>"><input type="button" value="press"/></a>--%>
+  <%--<%--%>
+    <%--if(request.getParameter("submit1") != null) {--%>
+      <%--switch(name){--%>
+        <%--case "night.jsp":%><%@include file="night.jsp"%><%--%>
+        <%--break;--%>
+       <%--case "morning.jsp":%><%@include file="morning.jsp"%><%--%>
+        <%--break;--%>
+      <%--case "evening.jsp": %><%@include file="evening.jsp"%><%--%>
+        <%--break;--%>
+      <%--default :%><%@include file="afternoon.jsp"%><%--%>
+        <%--break;--%>
+      <%--}--%>
+    <%--}--%>
+  <%--%>--%>
+
   <%
     if(request.getParameter("submit1") != null) {
   %>
@@ -73,6 +73,7 @@
   <%
     }
   %>
+
   <form>
     <input type="submit" name="submit1" value="press">
   </form>

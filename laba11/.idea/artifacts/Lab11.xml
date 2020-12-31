@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Lab11">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lab11</output-path>
+    <root id="archive" name="Lab11.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="directory" name="random">
+            <element id="file-copy" path="$PROJECT_DIR$/target/laba11-1.0/WEB-INF/classes/random/MyRand.class" />
+          </element>
+          <element id="directory" name="servlets">
+            <element id="file-copy" path="$PROJECT_DIR$/target/laba11-1.0/WEB-INF/classes/servlets/Sss_Xml.class" />
+            <element id="file-copy" path="$PROJECT_DIR$/target/laba11-1.0/WEB-INF/classes/servlets/Sss_Header.class" />
+            <element id="file-copy" path="$PROJECT_DIR$/target/laba11-1.0/WEB-INF/classes/servlets/Sss_Json.class" />
+          </element>
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/target/laba11-1.0/WEB-INF/web.xml" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/target/laba11-1.0/index.jsp" />
+      <element id="javaee-facet-resources" facet="laba11/web/Web" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/laba11-1.0/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

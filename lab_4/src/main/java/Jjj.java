@@ -15,7 +15,7 @@ public class Jjj extends HttpServlet {
         if (method.equals("GET") || method.equals("POST")) {
             int hours = new Date().getHours();
             String name = "";
-            if ( hours > 0 && hours < 6)
+            if (hours > 0 && hours < 6)
                 name = "night.jsp";
             else if (hours > 6 && hours < 12)
                 name = "morning.jsp";
@@ -23,7 +23,11 @@ public class Jjj extends HttpServlet {
                 name = "afternoon.jsp";
             else if (hours > 18 && hours < 24)
                 name = "evening.jsp";
-            response.sendRedirect(name);
+            ServletContext servletContext = getServletContext();
+            RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/" + name);
+            requestDispatcher.forward(request, response);
+//            response.setStatus(307);
+//            response.setHeader("Location", "http://localhost:8081/laba4/" + name);
         } else {
             response.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED, "Send get or post request");
         }

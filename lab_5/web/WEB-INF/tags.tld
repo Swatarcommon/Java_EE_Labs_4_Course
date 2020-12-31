@@ -11,6 +11,9 @@
     <tag>
         <name>Surname</name>
         <tag-class>tags.SurnameTag</tag-class>
+        <attribute>
+            <name>java_SUCK</name>
+        </attribute>
     </tag>
     <tag>
         <name>Lastname</name>

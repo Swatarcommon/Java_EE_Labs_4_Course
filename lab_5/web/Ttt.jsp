@@ -6,11 +6,10 @@
 </head>
 <body>
 <ctg:Dossier>
-    <ctg:Surname/>
+    <ctg:Surname java_SUCK="JAVA"/>
     <ctg:Lastname/>
     <ctg:Sex/>
     <ctg:Submit/>
 </ctg:Dossier>
-
 </body>
 </html>

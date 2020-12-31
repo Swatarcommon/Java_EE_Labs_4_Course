@@ -7,6 +7,16 @@ import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.TagSupport;
 
 public class SurnameTag extends TagSupport {
+    public String java_SUCK;
+
+    public String getJava_SUCK() {
+        return java_SUCK;
+    }
+
+    public void setJava_SUCK(String java_SUCK) {
+        this.java_SUCK = java_SUCK;
+    }
+
     @SneakyThrows
     @Override
     public int doStartTag() throws JspException {

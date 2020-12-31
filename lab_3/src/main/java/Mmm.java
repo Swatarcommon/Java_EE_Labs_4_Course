@@ -11,12 +11,12 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 
-@WebServlet("/GoMmm")
+    @WebServlet("/GoMmm")
 public class Mmm extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpClient hc = new HttpClient();
-        String uri = "http://localhost:8080" + request.getContextPath() + "/GoGgg?param=name";
+        String uri = "http://localhost:8081" + request.getContextPath() + "/GoGgg?param=name";
         GetMethod gm = new GetMethod(uri);
         hc.executeMethod(gm);
         response.setContentType("text/html");
@@ -28,9 +28,10 @@ public class Mmm extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpClient hc = new HttpClient();
-        String uri = "http://localhost:8080" + request.getContextPath() + "/GoGgg";
+        String uri = "http://localhost:8081" + request.getContextPath() + "/GoGgg";
         PostMethod pm = new PostMethod(uri);
-        pm.setParameter("param","Valentin");
+        pm.setParameter("param","Swatar Common");
+
         hc.executeMethod(pm);
         response.setContentType("text/html");
         PrintWriter pw = response.getWriter();

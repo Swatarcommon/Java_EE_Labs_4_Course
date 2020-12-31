@@ -11,7 +11,7 @@ public class LastnameTag extends TagSupport {
     @Override
     public int doStartTag() throws JspException {
         JspWriter out = pageContext.getOut();
-        out.print("<p>Lastname: <input name=\"lastname\" type=\"text\"/></p>");
+        System.out.print("<p>Lastname: <input name=\"lastname\" type=\"text\"/></p>");
         return SKIP_BODY;
     }
 }

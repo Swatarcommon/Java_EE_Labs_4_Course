@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="laba8:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>laba8</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="laba8-1.0.war">
+      <element id="artifact" artifact-name="laba8:war exploded" />
+    </root>
+  </artifact>
+</component>

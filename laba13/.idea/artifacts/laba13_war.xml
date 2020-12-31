@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="laba13:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>laba13</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="laba13-1.0.war">
+      <element id="artifact" artifact-name="laba13:war exploded" />
+    </root>
+  </artifact>
+</component>
